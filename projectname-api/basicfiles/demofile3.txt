@@ -1,0 +1,1 @@
+This is a demo file 3 to test Node's file reading capability.

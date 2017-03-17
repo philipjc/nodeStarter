@@ -1,0 +1,29 @@
+{
+  "name": "nodestarter",
+  "version": "1.0.0",
+  "description": "Start a Node project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js --exec babel-node"
+  },
+  "keywords": [
+    "javascript",
+    "node"
+  ],
+  "author": "philipjc",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-cli": "^6.24.0",
+    "babel-preset-es2015": "^6.24.0",
+    "babelify": "^7.3.0"
+  },
+  "dependencies": {
+    "async": "^2.1.5",
+    "body-parser": "^1.17.1",
+    "consign": "^0.1.2",
+    "cors": "^2.8.1",
+    "express": "^4.15.2",
+    "socket.io": "^1.7.3"
+  }
+}
