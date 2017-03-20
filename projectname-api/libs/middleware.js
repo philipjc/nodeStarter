@@ -7,7 +7,7 @@ module.exports = app => {
   app.set('port', 3000);
   app.set('json spaces', 4);
   app.use(cors({
-    origin: ['http://localhost:3001', 'http://localhost:4000'],
+    origin: ['http://localhost:3000', 'http://localhost:3001', 'http://localhost:4000','http://localhost:3000/socket.io/?EIO=3&transport=polling&t=LhTA4qq'],
     methods: ['GET', 'POST', 'PUT', 'DELETE'],
     allowedHeaders: ['Content-Type', 'Authorisation']
   }));

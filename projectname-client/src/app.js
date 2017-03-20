@@ -1,4 +1,5 @@
 import Main from './components/main';
+import io from 'socket.io-client';
 
 class App {
   constructor(body) {
@@ -10,6 +11,9 @@ class App {
     this.addEventListener();
     this.main.hitRoute();
     console.log('Loaded changed!');
+
+    let socket = io('localhost:3000');
+    socket.emit('bullshit', 'this is');
   }
 
   addEventListener() {
